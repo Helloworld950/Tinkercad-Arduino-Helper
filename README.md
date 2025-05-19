@@ -58,60 +58,14 @@ A browser extension that supercharges the Tinkercad code editor with features li
     // Main code here
   }
   ```
-- `lcd_init`
-  ```cpp
-  #include <LiquidCrystal.h>
-  LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
-  void setup() {
-    lcd.begin(16, 2);
-    lcd.print("Hello, World!");
-  }
+---
 
-  void loop() {
-    // Your code here
-  }
-  ```
-- `keypad_init`
-  ```cpp
-  #include <Keypad.h>
-  const byte ROWS = 4; // Four rows
-  const byte COLS = 3; // Three columns
-  char keys[ROWS][COLS] = {
-    {'1','2','3'},
-    {'4','5','6'},
-    {'7','8','9'},
-    {'*','0','#'}
-  };
-  byte rowPins[ROWS] = {9, 8, 7, 6};
-  byte colPins[COLS] = {5, 4, 3};
+##🙌 Author & Credits
 
-  Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
+Developed with ❤️ by [Your Name Here]
+Idea, code, integration, and enhancement system are original and created from scratch.
 
-  void setup() {
-    Serial.begin(9600);
-  }
-
-  void loop() {
-    char key = keypad.getKey();
-    if (key) {
-      Serial.println(key);
-    }
-  }
-  ```
-- `i2c_init`
-  ```cpp
-  #include <Wire.h>
-
-  void setup() {
-    Wire.begin();
-    // I2C device initialization here
-  }
-
-  void loop() {
-    // I2C communication code here
-  }
-  ```
 
 ---
 
