@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Tinkercad Code Editor Enhancer",
+    "version": "1.0",
+    "description": "Enhances the Tinkercad code editor with auto-completion and bracket matching.",
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://*.tinkercad.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.tinkercad.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["inject.js"],
+            "matches": ["*://*.tinkercad.com/*"]
+        }
+    ],
+    "icons": {
+        "128": "icon.png"
+    }
+}
