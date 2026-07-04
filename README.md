@@ -63,7 +63,7 @@ A browser extension that supercharges the Tinkercad code editor with features li
 
 ## 🙌 Author & Credits
 
-Developed with ❤️ by [Your Name Here]
+Developed with ❤️ by Mohit Raj
 Idea, code, integration, and enhancement system are original and created from scratch.
 
 
